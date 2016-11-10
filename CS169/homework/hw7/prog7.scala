@@ -7,12 +7,19 @@ object setObject {
 		  }
 		  output 
 		}
-		/*
+		
 		// Takes in a list of ints and returns a set consisting of all ints in the list
 		def setList(elem:List[Int]):Int=>Boolean = {
-			
-		}
-		
+			def output(e2:List[Int]):Boolean = {
+				if (e2.isEmpty) Nil
+				else {
+					e2.head==elem
+					setList(e2.tail)
+				}
+			}
+			outpu
+t		}
+		/*
 	    // Takes in a set S and a predicate P and returns a new set that consists of the elements of S that satisfy the predicate
 	    def filter(s:Int=>Boolean, p:Int=>Boolean):Int=>Boolean = {
 	    
